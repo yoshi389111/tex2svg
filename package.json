@@ -1,6 +1,6 @@
 {
-    "name": "math2svg",
-    "displayName": "Math2Svg",
+    "name": "tex2svg",
+    "displayName": "TeX2SVG",
     "description": "",
     "version": "0.0.1",
     "engines": {
@@ -10,21 +10,21 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:math2svg.convert"
+        "onCommand:tex2svg.convert"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "math2svg.convert",
-                "title": "Math to SVG"
+                "command": "tex2svg.convert",
+                "title": "TeX to SVG"
             }
         ],
         "menus": {
             "editor/context": [
                 {
                     "when": "editorHasSelection && !editorReadonly && !editorHasMultipleSelections",
-                    "command": "math2svg.convert",
+                    "command": "tex2svg.convert",
                     "group": "z_commands"
                 }
             ]

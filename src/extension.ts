@@ -16,8 +16,8 @@ const convertLatex2Svg = (text: string) => {
 };
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('"math2svg" is now active.');
-    const disposable = vscode.commands.registerCommand('math2svg.convert', async () => {
+    console.log('"tex2svg" is now active.');
+    const disposable = vscode.commands.registerCommand('tex2svg.convert', async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) { return; }
         const selection = editor.selection;
